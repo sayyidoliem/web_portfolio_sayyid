@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #fff;
+  color: #1d1d1f;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #0066cc;
+  color: #fff;
+}
+@layer components {
+  .apple-container {
+    @apply mx-auto w-full max-w-apple px-6;
+  }
+  .apple-gallery-container {
+    @apply mx-auto w-full max-w-gallery px-6;
+  }
+  .text-hero-display {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.07;
+    letter-spacing: -0.28px;
+  }
+  .text-display-lg {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  .text-display-md {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.47;
+    letter-spacing: -0.374px;
+  }
+  .text-lead {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.196px;
+  }
+  .text-lead-airy {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .text-tagline {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: 0.231px;
+  }
+  .text-body-apple {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47;
+    letter-spacing: -0.374px;
+  }
+  .text-body-strong {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.24;
+    letter-spacing: -0.374px;
+  }
+  .text-caption {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: -0.224px;
+  }
+  .text-caption-strong {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.224px;
+  }
+  .text-nav-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.12px;
+  }
+  .text-fine-print {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.12px;
+  }
+  .product-shadow {
+    box-shadow: rgba(0, 0, 0, 0.22) 3px 5px 30px 0;
+  }
+  .frosted-bar {
+    background: rgba(245, 245, 247, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .active-scale {
+    @apply transition-transform active:scale-95 motion-reduce:transition-none motion-reduce:active:scale-100;
+  }
+  .focus-ring {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-action-focus;
+  }
+}
+@media (max-width: 1068px) {
+  .text-hero-display {
+    font-size: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .text-hero-display {
+    font-size: 34px;
+  }
+  .text-display-lg {
+    font-size: 34px;
+  }
+  .text-lead {
+    font-size: 24px;
+  }
+}
+@media (max-width: 419px) {
+  .text-hero-display {
+    font-size: 28px;
+  }
+  .text-display-lg {
+    font-size: 28px;
+  }
+}
